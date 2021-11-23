@@ -109,17 +109,21 @@ const Footer = ({customFooter}) => {
       
     </div>
     <div className='moe-footer-container'>
+        <p>©Myanmar Online Entrepreneur. 2021 All Right Reserved. Powered by MISL</p>
+    </div>
+    {/* <div className='moe-footer-container'>
     <div className='moe-footer'>
         <div>
-          <p className='copy'>©Myanmar Online Entrepreneur. 2021 All Right Reserved. Powered by MiSL</p>
-        </div>
-        <div className='social-icons'>
+          <p className='copy'>©Myanmar Online Entrepreneur. 2021 All Right Reserved. Powered by MISL</p>
+          <div className='social-icons'>
             <Facebook fontSize='large' />
             <Instagram fontSize='large' />
             <YouTube fontSize='large' />
         </div>
+        </div>
+        
     </div>
-    </div>
+    </div> */}
     <div className='fixed-footer'>
         <div className='sticky-icon'>
             <Home  />
