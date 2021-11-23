@@ -1,0 +1,971 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Myanmar:wght@300;400;500;700&display=swap');
+
+body{
+    margin:0px;
+    padding: 0px;
+    height: 150vh;
+    background-color: #fff;
+    font-family: 'Lato', sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+button{
+    outline: none;
+    border: none;
+}
+input{
+    outline: none;
+    border: none;
+}
+.logo img{
+    width: 100px;
+}
+#main{
+    width:100%;
+    /* height:768px; */
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-image: url('./images/banner.png'); */
+    position: relative;
+    z-index: 0;
+}
+#main::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    
+}
+
+.video-wrapper{
+  padding-top: 80px;
+  position: relative;
+ 
+}
+
+.text-overlay{
+  text-align: center;
+}
+
+.text-overlay h2{
+  background:rgba(0,0,0,0.16);
+  letter-spacing: 5px;
+  text-shadow: 0em 0.1em 0.1em rgba(0,0,0,0.4) ;
+  color:#fff;
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  right: 0;
+  text-align: center;
+  padding: 10px;
+  font-size: 50px;
+}
+
+/* about-moe */
+.moe-wrapper{
+    padding-top: 50px;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+.about-moe,.books{
+    color:#fff;
+    background-color:#e87323 ;
+    padding: 5px;
+}
+
+.register-now{
+    color: #fff;
+    background-color: #e87323;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-now p{
+    font-size:18px ;
+}
+
+.about-moe,.books p{
+    font-size: 18px;
+    padding-left: 6%;
+    text-align: left;
+}
+
+.register-btn{
+    background-color: rgb(0, 0, 0);
+    font-size: medium;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.times{
+    color: #0c71c3;
+    padding-top: 10px;
+}
+
+.moe-btn,.more-courses{
+    color: #fff;
+    border-color: 0px;
+    border-radius: 3px;
+    letter-spacing: 2px;
+    font-size: 16px;
+    background-color: #000;
+    cursor: pointer;
+    padding: 7px;
+    margin-bottom: 30px;
+   
+}
+
+.more-container{
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0px;
+}
+
+.more-details{
+    padding: 50px 0px;
+}
+.more-d{
+    background-color: #000;
+    color: #fff;
+    padding: 7px;
+    font-size: 17px;
+    border-radius:5px;
+}
+
+
+.about-container{
+    font-size: 30px;
+    letter-spacing: 5px;
+    text-shadow: 0em 0.1em 0.1em rgb(0 0 0 / 40%);
+    text-align: center;
+   
+}
+.moe-text p{
+    font-family: 'Noto Sans Myanmar';
+    font-size: medium;
+    text-align: center;
+    line-height: 2.6em;
+    padding-top: 10px;
+
+}
+
+/* courses */
+
+
+.courses{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+}
+
+.my-courses {
+    flex: 1;
+    width: 100%; 
+    margin-top: 90px;
+}
+
+.bg{
+    background:linear-gradient(0deg, rgba(0,0,0,0.71), rgba(0,0,0,0.71)),url('https://myanmaronlineentrepreneur.com/wp-content/uploads/2021/08/course-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    height: 350px; ;  
+   
+}
+
+
+.course-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    padding: 0px 10%;
+    
+}
+
+.course-wrapper{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    place-items: center;
+    cursor: pointer;
+
+}
+
+.course{
+    width: 100%;
+}
+
+.image-wrapper{
+    width: 100%;
+    position: relative;
+}
+
+.price{
+    position: absolute;
+    background-color: #e87323;
+    color: #fff;
+    font-size: 13px;
+    border-radius: 10px;
+    padding: 7px;
+    top: 10px;
+    right: 10px;
+}
+
+.overlay{
+   /* display:none; */
+   position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  width: 100%;
+  height: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: #e87323;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+ 
+}
+
+.image-wrapper:hover .overlay{
+   opacity: 1;
+}
+
+
+.image-wrapper img{
+    width: 100%;
+    border: 3px solid #e87323;
+}
+
+.course-footer{
+    width: auto;
+    background-color: #fff;
+    padding: 10px;
+    margin-top: 0px;
+}
+
+.footer-title h3,.text{
+    text-align: center;
+}
+
+/* books */
+
+.books-container{
+    background-color: #f5f5f5;
+    padding-top: 60px;
+   
+}
+
+.books-wrapper{
+   
+    max-width: 1080px;
+    margin: auto;
+   
+}
+
+.book{
+    display: flex;
+    background-color: #fff;
+    margin-top: 20px;
+    
+}
+
+.image{
+    width: 45%;
+}
+
+.image img{
+    width: 100%;
+    padding:4% 4%;
+}
+
+.book-body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 3%;
+}
+
+/* review */
+.review-container{
+    position: relative;
+    overflow-x: hidden;
+}
+.review-bg{
+    width: 100%;
+    height: 50%;
+}
+
+
+.slide-image-wrapper{
+    width:50% ;
+    display: flex;
+    align-content: center;
+    padding: 20px;
+}
+
+.slide-image{
+    border-radius: 100%;
+    border: 2px solid #e87323;
+    width: 100%;
+}
+
+.slider{
+   background-image: url('https://myanmaronlineentrepreneur.com/wp-content/uploads/2021/09/client-bg.jpg');
+   background-attachment: fixed;
+   background-position: center;
+   background-size: cover;
+  
+}
+
+
+.slide-wrapper{
+    padding: 20px 10px;
+    width: 70%;
+    margin: 0 auto;
+    overflow-x: hidden;
+   
+}
+
+.slide{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(255,255,255,0.4);
+}
+
+
+
+.slide-body{
+    padding: 10px 10px;
+   
+}
+
+.slide-body h4{
+    font-size: large;
+}
+
+.slide-body p{
+    font-size: medium;
+    font-weight: 500;
+}
+
+/* footer section */
+
+.shape-wrapper {
+    position: relative;
+   
+    
+}
+
+.custom-shape {
+    position: absolute;
+    /* bottom: 0; */
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    /* transform: rotate(180deg); */
+    background-color: #222222;
+}
+
+.custom-shape .divider {
+    position: relative;
+    display: block;
+    width: calc(141% + 1.3px);
+    height: 100px;
+}
+
+.custom-shape .shape-fill {
+    fill: #e87323;
+}
+
+.custom-shape .no-fill{
+    fill: #f5f5f5;
+}
+
+.footer-container{
+    color: #fff;
+    max-width: 1080px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.footer-wrapper{
+    display: flex;
+    
+}
+.footer-wrapper h2{
+    font-variant: small-caps;
+    letter-spacing: 2px;
+}
+
+.support{
+    flex: 1;
+    padding-right: 20px;
+}
+.support-menu {
+    border-bottom:3px solid #e87323;
+    width: fit-content;  
+   
+}
+.support-text{
+    padding-top: 30px;
+}
+.support-text p{
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #fff;
+}
+.recent{
+    flex: 1;
+}
+.recent-text{
+    width: max-content;
+    padding-top: 30px;
+}
+
+.recent-text .add-border{
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #fff;
+    width: auto;
+    padding-top: 8px;
+    line-height: 2px;
+}
+
+.contact{
+    flex: 1;
+    padding-left: 20px;
+}
+.contact-info{
+    display: flex;
+    padding-top: 30px;
+    align-items: center;
+}
+.icon{
+    font-size: medium;
+    color: #e87323;
+    padding-right: 7px;
+}
+.icon-right{
+    width: max-content;
+}
+.icon-right p{
+    padding-top: 6px;
+    width: 100%;
+}
+.moe-footer-container{
+    background-color: #000;
+    padding: 10px;
+    
+
+}
+.moe-footer{
+    max-width: 1080px;
+    margin: 0 auto;
+    color: #666666;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.social-icons > *{
+   padding-right: 10px;
+   font-size: medium;
+}
+
+.fixed-footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #222222;
+    color: #fff;
+    padding:10px 0px;
+    font-size: 12px;
+    opacity: 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.sticky-icon{
+    text-align: center;
+}
+.price-value{
+    color: #e87323;
+}
+
+/* class section */
+
+.class-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+}
+
+.new-class{
+    color: #e87323;
+    padding-top: 50px;
+}
+
+.sns{
+    padding-bottom: 20px;
+}
+
+.business{
+    font-style: italic;
+    color: #e87323;
+    font-size: small;
+}
+.read-more{
+    color: #e87323;
+    font-size: small;
+
+}
+
+/*upcoming books */
+
+.upcoming-wrapper{
+    display: flex;
+    background-color: #e87323;
+    justify-content: center;
+   
+   
+}
+.book-name{
+    font-size: 60px;
+    text-align: center;
+   
+}
+
+.upcoming-book{
+     
+    color: #fff;
+    text-align: center;
+    padding-top: 30px;
+    letter-spacing: 2px;
+    line-height: 1.2em;
+   
+}
+
+.lorem{
+    letter-spacing: normal;
+    line-height: normal;
+}
+
+.border{
+    width: 100px;
+    color: #fff;
+   
+}
+.pre-btn{
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: medium;
+    letter-spacing: 0.5px;
+}
+.align{
+    text-align: center;
+    background-color: #f5f5f5;
+    
+}
+.pre-wrapper{
+    padding-top: 30px;
+}
+.upcoming-title{
+    padding-top: 30px;
+}
+
+.all-books{
+    text-align: center;
+    font-size: 27px;
+    font-weight: bold;
+    border-bottom: 2px solid #e87323;
+    padding-bottom: 10px;
+    padding-top: 30px;
+    max-width: max-content;
+    margin: auto;
+   
+}
+.book-image img{
+    width: auto;
+}
+
+nav{
+	display: flex;
+  background-color: #fff;
+	justify-content: space-around;
+	align-items: center;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width:100%;
+	z-index: 1;
+    background-color: transparent;
+    transition: 0.6s ease-in-out;
+}
+nav.active{
+	box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.157);
+	background-color: #fff;
+}
+nav ul{
+	display: flex;
+}
+.active{
+    background-color: #976849;
+    color:#000;
+	box-shadow: 5px 10px 30px rgba(198, 64, 64, 0.411);
+	transition: all ease 1.8s;
+}
+.active:hover{
+    /* background-color: #e87323; */
+    color:#fff;
+	/* box-shadow: 5px 10px 30px rgba(198, 64, 64, 0.411); */
+	transition: all ease 0.2s;
+}
+nav ul li a{
+    font-family: 'Lato';
+	height:40px;
+	line-height: 43px;
+	margin: 3px;
+	padding: 0px 22px;
+	display: flex;
+	font-size: 0.9rem;
+	text-transform: uppercase;
+	font-weight: 500;
+	color:#000;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.2s ease-in-out;
+}
+nav ul li a:hover{
+	background-color: #e87323;
+    color:#fff;
+	box-shadow: 5px 10px 30px rgba(255, 2, 2, 0.336);
+	transition: all ease 0.2s;
+}
+nav .menu-btn,
+.menu-icon{
+		display:none;
+	}
+
+
+@media(max-width:1190px){
+	#main{
+		background-size: 1150px !important;
+		
+	}
+    .books-wrapper{
+        max-width: 920px;
+    }
+    .footer-container{
+        max-width: 920px;
+        padding: 20px;
+    }
+
+    .footer-wrapper{
+        flex-direction: column;
+    }
+
+    .support{
+        width: 100%;
+    }
+    .book-name{
+        font-size: 45px;
+    }
+	
+
+}
+
+@media(max-width:970px){
+    .slide-image-wrapper{
+        width: 100%;
+    }
+}
+
+@media(max-width:1100px){
+       .menu-icon{
+            display:block;
+        }
+        nav{
+            justify-content: space-between;
+            height: 65px;
+            padding: 0px 100px;
+        }
+        .logo img{
+            width:100px;
+            padding-top: 10px;
+        }
+       
+        .menu{
+            display:none;
+            position:absolute;
+            top:65px;
+            left:0px;
+            background-color:#fff;
+            border-bottom:4px solid #e87323;
+            width:100%;
+            padding:0px;
+            margin:0px;
+            margin-top: 18px;
+        }
+        .menu li{
+            width:100%;
+        }
+        nav .menu li a{
+            width:100%;
+            height:40px;
+            justify-content: center;
+            align-items: center;
+            margin:0px;
+            padding: 25px;
+            border:1px solid rgba(38,38,38,0.03);
+        }
+        nav .menu-icon{
+            cursor:pointer;
+            float:right;
+            padding:28px 20px;
+            position:relative;
+            user-select: none;
+        }
+        nav .menu-icon .nav-icon{
+            background-color:#e87323;
+            display:block;
+            height:2px;
+            position:relative;
+            transition: background 0.2s ease-out;
+            width:24px;
+        }
+        nav .menu-icon .nav-icon:before,
+        nav .menu-icon .nav-icon:after{
+            background:#e87323;
+            content:'';
+            display:block;
+            height:100%;
+            position:absolute;
+            transition:all ease-out 0.2s;
+            width:100%;
+        }
+        nav .menu-icon .nav-icon:before{
+            top:6px;
+        }
+        nav .menu-icon .nav-icon:after{
+            top:-6px;
+        }
+        nav .menu-btn:checked ~ .menu-icon .nav-icon{
+            background:transparent;
+        }
+        nav .menu-btn:checked ~ .menu-icon .nav-icon:before{
+            transform: rotate(-45deg);
+            top:0;
+        }
+        nav .menu-btn:checked ~ .menu-icon .nav-icon:after{
+            transform: rotate(45deg);
+            top:0;
+        }
+        nav .menu-btn{
+            display:none;
+        }
+        
+        nav .menu-btn:checked ~ .menu{
+            display:block;
+        }
+
+       
+    }
+    @media(max-width:620px){
+        .new-class{
+            padding-top: 10px;
+        }
+        .more-details{
+            padding-top: 20px;
+        }
+        .sns{
+            font-size: 23px;
+        }
+        .class-text{
+            font-size: 15px;
+        }
+     }
+     
+     @media(max-width:780px){
+         .book{
+             flex-direction: column;
+         }
+         .more-container{
+             padding: 20px 0px;
+         }
+         .moe-btn{
+             margin-bottom: 10px;
+         }
+         .image{
+             width: 80%;
+         }
+         .slider{
+             text-align: center;
+         }
+         .slide{
+             flex-direction: column;
+         }
+         .slide-wrapper{
+             width: 85%;
+         }
+         .slide-imge-wrapper{
+             padding-left: 33%;
+         }
+         .slide-image{
+             width: 100%;
+         }
+         .fixed-footer{
+             opacity: 1;
+         }
+         .social-icons{
+            opacity: 0;
+         }
+         .book-name{
+             font-size: 20px;
+         }
+         .moe-footer{
+             z-index: 1;
+         }
+         .fixed-footer{
+             padding: 2px 0px;
+         }
+         .sticky-icon{
+             font-size: smaller;
+         }
+         .copy{
+             margin-top: 8px;
+         }
+     }
+     
+     
+     
+     @media(max-width:850px){
+         .course-wrapper{
+             grid-template-columns: 50% 50%;
+         }
+         .moe-footer-container{
+             display: flex;
+             align-items: center;
+             justify-content: center;
+         }
+         .moe-footer{
+             flex-direction: column;
+         }
+         .book-image img{
+             width: 100%;
+         }
+         .upcoming-wrapper{
+             flex-direction: column;
+             justify-content: center;
+             align-items: center;
+            
+         }
+     }
+
+        @media(max-width:600px){
+            .name{
+                width:60%;
+            }
+            .pr-heading{
+                width:60%;
+            }
+            .text-overlay h2{
+                font-size: 25px;
+            }
+            nav{
+                padding: 0px 50px;
+            }
+            .course-wrapper{
+                grid-template-columns: 100%;
+            }
+            .books-container{
+                padding-top: 20px;
+            }
+            .upcoming-title{
+                padding-top: 0px;
+            }
+        }
+        @media(max-width:420px){
+            .moe-text p{
+                font-size: 16px;
+                padding: 10px;
+            }
+            .about-moe,.books p{
+                text-align: center;
+            }
+            .times{
+                padding-top: 0px;
+            }
+            .image{
+                width: 100%;
+            }
+            .bg{
+                height: 200px;
+            }
+            nav{
+                padding: 0px 20px;
+            }
+            .image{
+                width: 100%;
+            }
+            .books-container{
+                padding-top: 0px;
+            }
+            .footer-container{
+                padding-top: 0px;
+            }
+            .contact{
+                padding-left: 0px;
+            }
+           
+            .book-body{
+                justify-content: center;
+                align-items: center;
+            }
+            .fixed-footer{
+                font-size: 10px;
+            }
+        }
