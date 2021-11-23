@@ -50,11 +50,20 @@ input{
     
 }
 
-.video-wrapper{
+.main-wrapper{
   padding-top: 80px;
   position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
  
 }
+.main-wrapper img{
+    width: 100%;
+}
+
 
 .text-overlay{
   text-align: center;
@@ -501,7 +510,7 @@ input{
     /* max-width: 1080px;
     margin: 0 auto; */
     color: #fff;
-    
+    padding-bottom: 20px;
     text-align: center;
 }
 .social-icons > *{
@@ -521,10 +530,12 @@ input{
     position: fixed;
     bottom: 0;
     width: 100%;
+    cursor: pointer;
 }
 
 .sticky-icon{
     text-align: center;
+    color: #fff;
 }
 .price-value{
     color: #e87323;
@@ -926,6 +937,9 @@ nav .menu-btn,
             .upcoming-title{
                 padding-top: 0px;
             }
+            /* .video-player{
+                height: 100%;
+            } */
         }
         @media(max-width:420px){
             .moe-text p{

@@ -3,6 +3,7 @@ import Jump from 'react-reveal/Jump';
 import LightSpeed from 'react-reveal/LightSpeed';
 import Jello from 'react-reveal/Jello';
 import Fade from 'react-reveal/Fade';
+import { Link } from 'react-router-dom';
 
 const Footer = ({customFooter}) => {
     return(
@@ -126,16 +127,22 @@ const Footer = ({customFooter}) => {
     </div> */}
     <div className='fixed-footer'>
         <div className='sticky-icon'>
-            <Home  />
-            <p>HOME</p>
+            <Link to='/'>
+            <Home style={{color:'white'}}  />
+            <p style={{color:'white'}}>HOME</p>
+            </Link>
         </div>
         <div className='sticky-icon'>
-            <Book />
-            <p>COURSES</p>
+            <Link to='/Course'>
+            <Book style={{color:'white'}}/>
+            <p style={{color:'white'}}>COURSES</p>
+            </Link>
         </div>
         <div className='sticky-icon'>
-            <LibraryBooks />
-            <p>BOOK</p>
+            <Link to='/Book'>
+            <LibraryBooks style={{color:'white'}} />
+                <p style={{color:'white'}}>BOOK</p>
+                </Link>
         </div>
         <div className='sticky-icon'>
             <Person />
