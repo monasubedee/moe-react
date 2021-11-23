@@ -1,4 +1,4 @@
-import { Book, LibraryBooks,  Email, Facebook, Home, Instagram, LocationOnOutlined, Person, PhoneIphoneOutlined, YouTube } from "@material-ui/icons";
+import { Book, LibraryBooks,  Email, Home, LocationOnOutlined, Person, PhoneIphoneOutlined } from "@material-ui/icons";
 import Jump from 'react-reveal/Jump';
 import LightSpeed from 'react-reveal/LightSpeed';
 import Jello from 'react-reveal/Jello';
