@@ -1,5 +1,6 @@
 import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
 import HeadShake from 'react-reveal/HeadShake';
+import { Link } from 'react-router-dom'
 
 const Courses = () => {
     return(
@@ -206,9 +207,11 @@ const Courses = () => {
        
          </div>
         <div className='more-container'>
+            <Link to='/Course'>
         <button className='more-courses'>
                More Courses
                </button>
+               </Link>
         </div>
         
          </div>

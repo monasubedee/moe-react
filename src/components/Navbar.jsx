@@ -21,7 +21,7 @@ const Navbar = () => {
 
     return(
         <nav className={nav ? 'nav active' : 'nav'}>
-            <Link to='#' className='logo'>
+            <Link to='/' className='logo'>
                 <img src='https://myanmaronlineentrepreneur.com/wp-content/uploads/2021/07/moe-myanmar-online-entrepreneur.png' alt='logo' />
             </Link>
             <input className='menu-btn' type='checkbox' id='menu-btn' />
@@ -29,7 +29,7 @@ const Navbar = () => {
                 <span className='nav-icon'></span>
             </label>
             <ul className='menu'>
-                <li><Link to='#'>HOME</Link></li>
+                <li><Link to='/'>HOME</Link></li>
                 <li><Link to='#'>ABOUT</Link></li>
                 <li><Link to='#'>SERVICES</Link></li>
                 <li><Link to='/Book'>BOOKS</Link></li>

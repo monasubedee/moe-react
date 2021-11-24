@@ -60,6 +60,9 @@ input{
   align-items: center;
  
 }
+.main-bg{
+    width: 100%;
+}
 .main-wrapper img{
     width: 100%;
 }

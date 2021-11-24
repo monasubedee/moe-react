@@ -2,6 +2,8 @@
 import Swing from 'react-reveal/Swing';
 import Zoom from 'react-reveal/Zoom';
 import Fade from 'react-reveal/Fade';
+import { Link } from 'react-router-dom'
+
 
 const Books = () => {
     return(
@@ -57,9 +59,11 @@ const Books = () => {
             </div>
 
             <div className='more-container'>
+                <Link to='/Book'>
                                 <button className='moe-btn'>
                             More Books
                             </button>
+                            </Link>
                             </div>
 
         </div>
