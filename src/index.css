@@ -880,7 +880,7 @@ nav .menu-btn,
             opacity: 0;
          }
          .support-footer{
-             opacity: 0;
+             display: none;
          }
          .book-name{
              font-size: 20px;
