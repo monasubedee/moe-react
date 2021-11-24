@@ -988,4 +988,17 @@ nav .menu-btn,
             .fixed-footer{
                 font-size: 10px;
             }
+
+
+        }
+
+        @media (max-width: 375px) {
+            .upcoming-book{
+                font-size: 14px;
+            }
+            .slide-image-wrapper{
+                width: 80%;
+                padding: 10px;
+                padding-top: 20px;
+            }
         }
