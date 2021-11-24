@@ -99,7 +99,7 @@ const Footer = ({customFooter}) => {
                        <h3>E-Mail Address</h3>
                        <p>moeonlinetraining@gmail.com,</p>
                           
-                           <p>
+                           <p className='support-footer'>
                     support@myanmaronlineentrepreneur.com
                     </p>
                    </div>
