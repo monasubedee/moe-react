@@ -997,8 +997,11 @@ nav .menu-btn,
                 font-size: 14px;
             }
             .slide-image-wrapper{
-                width: 80%;
+                width: 50%;
                 padding: 10px;
                 padding-top: 20px;
+            }
+            .slide-image{
+                width:50%;
             }
         }
